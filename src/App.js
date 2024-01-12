@@ -1,16 +1,15 @@
-
-import {Header}  from './layout/Header'
-import {Footer}  from './layout/Footer'
-import {Main}  from './layout/Main'
+import { Header } from './layout/Header';
+import { Footer } from './layout/Footer';
+import { Shop } from './layout/Shop';
 
 function App() {
-  return (
-    <>
-      < Header />
-      < Main />
-      < Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Shop />
+            <Footer />
+        </>
+    );
 }
 
 export default App;
