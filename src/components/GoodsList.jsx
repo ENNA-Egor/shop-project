@@ -5,17 +5,12 @@ function GoodsList (props) {
 
     if (!goods.length) {
        return <h3>Nothing here</h3>
-    } else {
-        return <div className='goods'>
-            {
-                goods.map(item => (
-                    <GoodsItem key = {item.id} {...item}/>
-                ))
-            }
-        </div>
-
-
     }
+        return <div className='goods'>
+            {goods.map(item => (
+                    <GoodsItem key = {item.id} {...item} />
+                ))}
+        </div>
 }
 
 export {GoodsList};

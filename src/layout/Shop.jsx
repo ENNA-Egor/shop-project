@@ -11,17 +11,22 @@ function Shop(){
     useEffect(function getGoods () {
             fetch (API_URL, {
                 headers : {
-                    'Authorization': API_KEY,
-                }
-            }).then((response) => response.json()).then((data)=> {
+                    Authorization: API_KEY,
+                },
+            })
+            .then((response) => response.json())
+            .then((data)=> {
                 data.featured && setGoods(data.featured);
                 setLoading(false);
-            })
+            });
     }, []);
 
-    return <main className='container content'>
+    return (
+    <main className='container content'>
            { loading ? < Preloader /> : <GoodsList goods = {goods}/>}
-    </main>;
+           {/* { loading ? < Preloader /> : goods} */}
+    </main>
+    );
 }
 
 
