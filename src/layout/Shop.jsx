@@ -15,7 +15,7 @@ function Shop(){
                 },
             })
             .then((response) => response.json())
-            .then((data)=> {
+            .then(data=> {
                 data.featured && setGoods(data.featured);
                 setLoading(false);
             });
