@@ -52,11 +52,17 @@ nav {
   padding: 1rem;
 }
 
+.right{
+  position: absolute;
+  top: 22px;
+  right: 2rem;
+}
+
 @media(min-width : 767px) {
   .cart {
     top: 5rem;
     bottom: unset;
-    right: 3rem;
+    right: 1rem;
   }
   
 }
