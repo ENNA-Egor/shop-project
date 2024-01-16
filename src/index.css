@@ -34,3 +34,11 @@ nav {
 .progress .indeterminate{
   background-color: #303f9f;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card-content {
+  flex-grow: 1;
+}

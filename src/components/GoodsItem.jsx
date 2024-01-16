@@ -17,10 +17,10 @@ function GoodsItem (props) {
             <p>
                {description}
             </p>
+          </div>
           <div className="card-action">
             <button className="btn">Купить</button>
             <span className="right">{price}</span>
-          </div>
           </div>
         </div>
     );
