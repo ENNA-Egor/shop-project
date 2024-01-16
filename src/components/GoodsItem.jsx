@@ -19,7 +19,7 @@ function GoodsItem (props) {
             </p>
           </div>
           <div className="card-action">
-            <button className="btn">Купить</button>
+            <button className="btn indigo darken-1">Купить</button>
             <span className="right">{price}</span>
           </div>
         </div>

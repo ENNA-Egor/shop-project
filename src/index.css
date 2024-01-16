@@ -42,3 +42,25 @@ nav {
 .card-content {
   flex-grow: 1;
 }
+
+.cart{
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 5;
+  padding: 1rem;
+}
+
+@media(min-width : 767px) {
+  .cart {
+    top: 5rem;
+    bottom: unset;
+    right: 3rem;
+  }
+  
+}
+
+.cart-quantity{
+
+}
