@@ -80,3 +80,9 @@ nav {
   max-width: 85%;
 }
 
+.basket-close{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: white;
+}
