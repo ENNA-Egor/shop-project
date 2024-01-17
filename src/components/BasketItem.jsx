@@ -6,10 +6,10 @@ function  BasketItem (props) {
             quantity,
     } = props;
         return (
-        <li className="collection-item">
+        <li className="collection-item ">
             {name} x {quantity} = {price} 
-            <span  class="secondary-content">
-                <i class="material-icons">close</i></span>
+            <span  className="secondary-content">
+                <i className="material-icons">close</i></span>
             </li>
             );
 }
