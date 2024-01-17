@@ -83,10 +83,15 @@ nav {
 .basket-close{
   position: absolute;
   top: 0.5rem;
-  right: 0.5rem;
+  right: 1.5rem;
   color: white;
+  cursor: pointer;
 }
 
 .icons-color{
   color: #3f51b5;
+}
+
+.close-item{
+  cursor: pointer;
 }
