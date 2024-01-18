@@ -21,7 +21,7 @@ function BasketList (props){
             decQuantity = {decQuantity}/>
         )) :  <li className="collection-item indigo lighten-5">Корзина пуста</li>
     }
-    <li className="collection-item  indigo lighten-2">Общая стомость: {totalPrice} rub.</li>
+    <li className="collection-item  indigo lighten-2">Общая стомость: {totalPrice} rub.  <button className='btn indigo darken-1 btn-fin'>Оформить</button></li>
     <i className='material-icons  basket-close' onClick={handleBasketShow}>close</i>
   </ul>
 }

@@ -100,5 +100,14 @@ nav {
   cursor: pointer;
   vertical-align: middle;
   color: #3f51b5;
+}
 
+.btn-fin{
+  cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.5rem;
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
 }
