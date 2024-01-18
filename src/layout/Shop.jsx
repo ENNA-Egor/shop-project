@@ -55,6 +55,7 @@ function Shop(){
                 return el;
             };
         });
+        setOrder (newOrder);
     };
     const decQuantity = (itemId) => {
         const newOrder = order.map((el) => {
@@ -68,6 +69,7 @@ function Shop(){
                 return el;
             };
         });
+        setOrder (newOrder);
     };
 
     const handleBasketShow = () => {
