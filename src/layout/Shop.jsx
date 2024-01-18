@@ -43,6 +43,33 @@ function Shop(){
         setOrder(newOrder);
     }
 
+    const incQuantity = (itemId) => {
+        const newOrder = order.map((el) => {
+            if (el.id === itemId){
+                const newQuantity = el.quantity + 1;
+                return {
+                    ...el,
+                    quantity: newQuantity,
+                };
+            } else {
+                return el;
+            };
+        });
+    };
+    const decQuantity = (itemId) => {
+        const newOrder = order.map((el) => {
+            if (el.id === itemId){
+                const newQuantity = el.quantity - 1;
+                return {
+                    ...el,
+                    quantity: newQuantity >=0 ? newQuantity : 0,
+                };
+            } else {
+                return el;
+            };
+        });
+    };
+
     const handleBasketShow = () => {
         setBasketShow(!isBasketShow);
     }
@@ -67,7 +94,9 @@ function Shop(){
            {
             isBasketShow && <BasketList order = {order} 
             handleBasketShow = {handleBasketShow} 
-            removeFromBasket = {removeFromBasket}/>
+            removeFromBasket = {removeFromBasket}
+            incQuantity = {incQuantity}
+            decQuantity = {decQuantity}/>
            }
     </main>
     );

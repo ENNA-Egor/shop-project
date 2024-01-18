@@ -4,6 +4,8 @@ function BasketList (props){
     const {order =[], 
         handleBasketShow = Function.prototype,
         removeFromBasket = Function.prototype,
+        decQuantity = Function.prototype,
+        incQuantity = Function.prototype,
     } = props;
     const totalPrice = order.reduce ((sum, el)=> {
         return sum + el.price * el.quantity
@@ -13,7 +15,10 @@ function BasketList (props){
     <li  className="collection-item  indigo lighten-2">Корзинa</li>
     {
         order.length ? order.map(item => (
-            <BasketItem key = {item.id} {...item} removeFromBasket = {removeFromBasket}/>
+            <BasketItem key = {item.id} {...item} 
+            removeFromBasket = {removeFromBasket}
+            incQuantity = {incQuantity}
+            decQuantity = {decQuantity}/>
         )) :  <li className="collection-item indigo lighten-5">Корзина пуста</li>
     }
     <li className="collection-item  indigo lighten-2">Общая стомость: {totalPrice} rub.</li>

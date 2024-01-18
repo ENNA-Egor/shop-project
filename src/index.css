@@ -95,3 +95,10 @@ nav {
 .close-item{
   cursor: pointer;
 }
+
+.basket-quantity{
+  cursor: pointer;
+  vertical-align: middle;
+  color: #3f51b5;
+
+}
