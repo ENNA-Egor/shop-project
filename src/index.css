@@ -111,3 +111,23 @@ nav {
   font-size: 12px;
   line-height: 25px;
 }
+
+#toast-container{
+  top: 3rem !important;
+  animation: fade-in 250ms ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.toast {
+  background-color: #303f9f;
+}
